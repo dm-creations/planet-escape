@@ -16,8 +16,8 @@ export default {
     //  You can also use 'umd' if you need to ingest your game into another system.
     //  If using Phaser 3.21 or **below**, add: `intro: 'var global = window;'` to the output object.
     output: {
-        file: './dist/game.js',
-        name: 'MyGame',
+        file: '../planet/game.js',
+        name: 'PlanetEscape',
         format: 'iife',
         sourcemap: true
     },
@@ -59,15 +59,15 @@ export default {
         typescript(),
 
         //  See https://www.npmjs.com/package/rollup-plugin-serve for config options
-        serve({
-            open: true,
-            contentBase: 'dist',
-            host: 'localhost',
-            port: 10001,
-            headers: {
-                'Access-Control-Allow-Origin': '*'
-            }
-        })
+        // serve({
+        //     open: true,
+        //     contentBase: 'dist',
+        //     host: 'localhost',
+        //     port: 10001,
+        //     headers: {
+        //         'Access-Control-Allow-Origin': '*'
+        //     }
+        // })
 
     ]
 };
